@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Australian Colleges</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/college.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <div class="our-college">
+        <h1>Top Colleges in Australia</h1>
+    </div>
+
+    <div class="grid">
+        <!-- University of Melbourne -->
+        <div class="card">
+            <img src="{% static 'images/melbourne.jpeg' %}" alt="University of Melbourne">
+            <div class="card-body">
+                <div class="card-rank">#1</div>
+                <div class="card-title">University of Melbourne</div>
+                <div class="card-location">📍 Melbourne, Australia</div>
+                <div class="card-text">Australia’s top-ranked university with strengths in research, arts, sciences, and business.</div>
+                <div class="card-tags">
+                    <span>Business</span><span>Science</span><span>Law</span><span>Arts</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$45,000 per year</div>
+                    <a href="{% url 'aus_university_of_melbourne_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- University of Sydney -->
+        <div class="card">
+            <img src="{% static 'images/sydney.jpg' %}" alt="University of Sydney">
+            <div class="card-body">
+                <div class="card-rank">#2</div>
+                <div class="card-title">University of Sydney</div>
+                <div class="card-location">📍 Sydney, Australia</div>
+                <div class="card-text">Known for strong global partnerships and programs in law, medicine, and humanities.</div>
+                <div class="card-tags">
+                    <span>Law</span><span>Medicine</span><span>Humanities</span><span>Economics</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$43,000 per year</div>
+                    <a href="{% url 'aus_university_of_sydney_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANU -->
+        <div class="card">
+            <img src="{% static 'images/anu.jpeg' %}" alt="Australian National University">
+            <div class="card-body">
+                <div class="card-rank">#3</div>
+                <div class="card-title">Australian National University (ANU)</div>
+                <div class="card-location">📍 Canberra, Australia</div>
+                <div class="card-text">Located in Canberra, ANU is a leader in research and political science.</div>
+                <div class="card-tags">
+                    <span>Political Science</span><span>Law</span><span>Research</span><span>Economics</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$42,500 per year</div>
+                    <a href="{% url 'aus_anu_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- University of Queensland -->
+        <div class="card">
+            <img src="{% static 'images/queensland.jpeg' %}" alt="University of Queensland">
+            <div class="card-body">
+                <div class="card-rank">#4</div>
+                <div class="card-title">University of Queensland (UQ)</div>
+                <div class="card-location">📍 Brisbane, Australia</div>
+                <div class="card-text">Strong in science, biotech, and engineering, based in Brisbane.</div>
+                <div class="card-tags">
+                    <span>Biotech</span><span>Engineering</span><span>Science</span><span>Health</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$41,000 per year</div>
+                    <a href="{% url 'aus_university_of_queensland_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monash University -->
+        <div class="card">
+            <img src="{% static 'images/monas.jpeg' %}" alt="Monash University">
+            <div class="card-body">
+                <div class="card-rank">#5</div>
+                <div class="card-title">Monash University</div>
+                <div class="card-location">📍 Melbourne, Australia</div>
+                <div class="card-text">One of the largest universities in Australia with global campuses and strong STEM focus.</div>
+                <div class="card-tags">
+                    <span>STEM</span><span>Medicine</span><span>Engineering</span><span>Law</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$40,000 per year</div>
+                    <a href="{% url 'aus_monash_university_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNSW -->
+        <div class="card">
+            <img src="{% static 'images/unsw.jpeg' %}" alt="UNSW Sydney">
+            <div class="card-body">
+                <div class="card-rank">#6</div>
+                <div class="card-title">UNSW Sydney</div>
+                <div class="card-location">📍 Sydney, Australia</div>
+                <div class="card-text">Top-ranked for engineering, law, and business, with strong industry connections.</div>
+                <div class="card-tags">
+                    <span>Engineering</span><span>Business</span><span>Law</span><span>Technology</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$42,000 per year</div>
+                    <a href="{% url 'aus_unsw_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UWA -->
+        <div class="card">
+            <img src="{% static 'images/western aus.jpeg' %}" alt="University of Western Australia">
+            <div class="card-body">
+                <div class="card-rank">#7</div>
+                <div class="card-title">University of Western Australia (UWA)</div>
+                <div class="card-location">📍 Perth, Australia</div>
+                <div class="card-text">Located in Perth, known for marine science, agriculture, and environmental studies.</div>
+                <div class="card-tags">
+                    <span>Marine Science</span><span>Environment</span><span>Agriculture</span><span>Geoscience</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$39,000 per year</div>
+                    <a href="{% url 'aus_uwa_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adelaide -->
+        <div class="card">
+            <img src="{% static 'images/adelaid.jpeg' %}" alt="University of Adelaide">
+            <div class="card-body">
+                <div class="card-rank">#8</div>
+                <div class="card-title">University of Adelaide</div>
+                <div class="card-location">📍 Adelaide, Australia</div>
+                <div class="card-text">Research-intensive university offering high-quality programs in medicine and engineering.</div>
+                <div class="card-tags">
+                    <span>Medicine</span><span>Engineering</span><span>Law</span><span>Health</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$38,500 per year</div>
+                    <a href="{% url 'aus_uoadelaide_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UTS -->
+        <div class="card">
+            <img src="{% static 'images/uts.jpeg' %}" alt="University of Technology Sydney">
+            <div class="card-body">
+                <div class="card-rank">#9</div>
+                <div class="card-title">University of Technology Sydney (UTS)</div>
+                <div class="card-location">📍 Sydney, Australia</div>
+                <div class="card-text">Known for design, communication, business, and innovation in tech.</div>
+                <div class="card-tags">
+                    <span>Design</span><span>Business</span><span>Communication</span><span>Tech Innovation</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$37,000 per year</div>
+                    <a href="{% url 'aus_uts_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Macquarie -->
+        <div class="card">
+            <img src="{% static 'images/macquarie.jpeg' %}" alt="Macquarie University">
+            <div class="card-body">
+                <div class="card-rank">#10</div>
+                <div class="card-title">Macquarie University</div>
+                <div class="card-location">📍 Sydney, Australia</div>
+                <div class="card-text">A leader in business, actuarial studies, and linguistics, located in Sydney.</div>
+                <div class="card-tags">
+                    <span>Business</span><span>Finance</span><span>Linguistics</span><span>IT</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">A$36,000 per year</div>
+                    <a href="{% url 'aus_mu_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

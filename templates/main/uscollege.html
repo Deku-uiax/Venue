@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top US Colleges</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/college.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <div class="our-college">
+        <h1>Top Colleges in the United States</h1>
+    </div>
+
+    <div class="grid">
+        <!-- Harvard University -->
+        <div class="card">
+            <img src="{% static 'images/harv.jpeg' %}" alt="Harvard University">
+            <div class="card-body">
+                <div class="card-rank">#1</div>
+                <div class="card-title">Harvard University</div>
+                <div class="card-location">📍 Cambridge, Massachusetts</div>
+                <div class="card-text">The oldest Ivy League school, renowned globally for law, business, medicine, and public policy.</div>
+                <div class="card-tags">
+                    <span>Law</span><span>Business</span><span>Medicine</span><span>Public Policy</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$54,000 per year</div>
+                    <a href="{% url 'us_harvard_university_detail' %}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stanford University -->
+        <div class="card">
+            <img src="{% static 'images/stanf.jpeg' %}" alt="Stanford University">
+            <div class="card-body">
+                <div class="card-rank">#2</div>
+                <div class="card-title">Stanford University</div>
+                <div class="card-location">📍 Stanford, California</div>
+                <div class="card-text">A top research university with world-class programs in engineering, AI, entrepreneurship, and science.</div>
+                <div class="card-tags">
+                    <span>Engineering</span><span>Computer Science</span><span>AI</span><span>Entrepreneurship</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$56,169 per year</div>
+                    <a href="{% url 'us_stanford_unversity_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MIT -->
+        <div class="card">
+            <img src="{% static 'images/mit.jpeg' %}" alt="MIT">
+            <div class="card-body">
+                <div class="card-rank">#3</div>
+                <div class="card-title">Massachusetts Institute of Technology (MIT)</div>
+                <div class="card-location">📍 Cambridge, Massachusetts</div>
+                <div class="card-text">MIT leads in STEM education, innovation, and research across engineering and computer science.</div>
+                <div class="card-tags">
+                    <span>Engineering</span><span>Robotics</span><span>Computer Science</span><span>Physics</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$55,878 per year</div>
+                    <a href="{% url 'us_mit_university_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yale University -->
+        <div class="card">
+            <img src="{% static 'images/yale.jpeg' %}" alt="Yale University">
+            <div class="card-body">
+                <div class="card-rank">#4</div>
+                <div class="card-title">Yale University</div>
+                <div class="card-location">📍 New Haven, Connecticut</div>
+                <div class="card-text">An Ivy League university famous for its law, arts, and humanities programs.</div>
+                <div class="card-tags">
+                    <span>Law</span><span>Arts</span><span>Humanities</span><span>Political Science</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$59,950 per year</div>
+                    <a href="{% url 'us_yale_unversity_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Princeton University -->
+        <div class="card">
+            <img src="{% static 'images/princeton.jpeg' %}" alt="Princeton University">
+            <div class="card-body">
+                <div class="card-rank">#5</div>
+                <div class="card-title">Princeton University</div>
+                <div class="card-location">📍 Princeton, New Jersey</div>
+                <div class="card-text">Known for excellence in economics, mathematics, and public affairs.</div>
+                <div class="card-tags">
+                    <span>Economics</span><span>Mathematics</span><span>Physics</span><span>Public Affairs</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$57,410 per year</div>
+                    <a href="{% url 'us_princeton_unversity_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- University of Chicago -->
+        <div class="card">
+            <img src="{% static 'images/uchicago.jpeg' %}" alt="University of Chicago">
+            <div class="card-body">
+                <div class="card-rank">#6</div>
+                <div class="card-title">University of Chicago</div>
+                <div class="card-location">📍 Chicago, Illinois</div>
+                <div class="card-text">Leading in economics, law, and political theory, with a rigorous academic tradition.</div>
+                <div class="card-tags">
+                    <span>Economics</span><span>Law</span><span>Political Science</span><span>History</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$60,552 per year</div>
+                    <a href="{% url 'us_uchicago_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columbia University -->
+        <div class="card">
+            <img src="{% static 'images/columbia.jpeg' %}" alt="Columbia University">
+            <div class="card-body">
+                <div class="card-rank">#7</div>
+                <div class="card-title">Columbia University</div>
+                <div class="card-location">📍 New York, New York</div>
+                <div class="card-text">Located in NYC, Columbia is known for journalism, medicine, and global affairs.</div>
+                <div class="card-tags">
+                    <span>Journalism</span><span>Medicine</span><span>Global Affairs</span><span>Law</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$63,530 per year</div>
+                    <a href="{% url 'us_colombia_university_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- University of Pennsylvania -->
+        <div class="card">
+            <img src="{% static 'images/upenn.jpeg' %}" alt="University of Pennsylvania">
+            <div class="card-body">
+                <div class="card-rank">#8</div>
+                <div class="card-title">University of Pennsylvania (UPenn)</div>
+                <div class="card-location">📍 Philadelphia, Pennsylvania</div>
+                <div class="card-text">A member of the Ivy League, UPenn is known for Wharton Business School and interdisciplinary programs.</div>
+                <div class="card-tags">
+                    <span>Business</span><span>Finance</span><span>Healthcare</span><span>Law</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$61,710 per year</div>
+                    <a href="{% url 'us_upenncylvenea_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- California Institute of Technology -->
+        <div class="card">
+            <img src="{% static 'images/caltech.jpeg' %}" alt="Caltech">
+            <div class="card-body">
+                <div class="card-rank">#9</div>
+                <div class="card-title">California Institute of Technology (Caltech)</div>
+                <div class="card-location">📍 Pasadena, California</div>
+                <div class="card-text">A top science and engineering institute, Caltech excels in physics, chemistry, and space science.</div>
+                <div class="card-tags">
+                    <span>Astrophysics</span><span>Chemistry</span><span>Mathematics</span><span>Engineering</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$60,864 per year</div>
+                    <a href="{% url 'us_cit_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Duke University -->
+        <div class="card">
+            <img src="{% static 'images/duke.jpeg' %}" alt="Duke University">
+            <div class="card-body">
+                <div class="card-rank">#10</div>
+                <div class="card-title">Duke University</div>
+                <div class="card-location">📍 Durham, North Carolina</div>
+                <div class="card-text">Duke combines academic rigor with athletic excellence and is well-regarded in medicine and public policy.</div>
+                <div class="card-tags">
+                    <span>Public Policy</span><span>Medicine</span><span>Economics</span><span>Engineering</span>
+                </div>
+                <div class="card-footer">
+                    <div class="tuition-fee">$63,450 per year</div>
+                    <a href="{% url 'us_duke_university_detail'%}" class="btn-contact">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
